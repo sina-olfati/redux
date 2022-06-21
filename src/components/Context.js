@@ -1,18 +1,20 @@
-import React, {useContext} from 'react'
-import {Number} from '../App.js'
+import React, { useContext } from "react";
+import { Number } from "../App.js";
+import { Name } from "../App.js";
 
 const Context = () => {
+  const count = useContext(Number);
+  const name = useContext(Name);
 
-    const count = useContext(Number)
-    
-    
-    return (
-        <div style={{border: "solid 1px"}}>
+  return (
+    <div style={{ border: "solid 1px" }}>
       Context
-      <br/>
+      <br />
       {count}
+      <br />
+      {name}
     </div>
-  )
-}
+  );
+};
 
-export default Context
+export default Context;
