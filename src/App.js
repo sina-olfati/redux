@@ -1,13 +1,13 @@
 import './App.css';
 import React from 'react';
-import Reducer2 from './components/Reducer2';
+import Reducer3 from './components/Reducer3';
 
 
 function App() {
 
   return (
     <div className="App">
-       <Reducer2 />
+       <Reducer3 />
     </div>
   );
 }
