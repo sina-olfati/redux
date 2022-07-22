@@ -1,7 +1,9 @@
-export const increase = () => {
+const increase = () => {
     return {type: "INCREASE"}
 }
 
-export const decrease = () => {
+const decrease = () => {
     return {type: "DECREASE"}
 }
+
+export {increase, decrease}

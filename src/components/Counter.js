@@ -3,12 +3,13 @@ import {increase, decrease } from "../redux/counter/counterAction"
 import { connect } from 'react-redux'
 // import { Connect } from 'react-redux/es/exports'
 
-const Counter = ({counter, increase, decrease}) => {
+const Counter = (props) => {
+  console.log(props)
   return (
     <div>
-      <h1>Counter : {counter}</h1>
-      <button onClick={increase}>+</button>
-      <button onClick={decrease}>-</button>
+      <h1>Counter : {props.counter}</h1>
+      <button onClick={props.increase}>+</button>
+      <button onClick={props.decrease}>-</button>
     </div>
   )
 }
