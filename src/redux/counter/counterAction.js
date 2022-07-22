@@ -1,9 +1,9 @@
-const increase = () => {
-    return {type: "INCREASE"}
+const increase = (value) => {
+    return {type: "INCREASE", payload: value}
 }
 
-const decrease = () => {
-    return {type: "DECREASE"}
+const decrease = (value) => {
+    return {type: "DECREASE", payload: value}
 }
 
 export {increase, decrease}
