@@ -6,7 +6,7 @@ import { connect } from 'react-redux'
 const Counter = ({counter, increase, decrease}) => {
   return (
     <div>
-      <h1>Counter - {counter}</h1>
+      <h1>Counter : {counter}</h1>
       <button onClick={increase}>+</button>
       <button onClick={decrease}>-</button>
     </div>

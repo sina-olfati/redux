@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import Counter from './components/Counter.js';
+import Counter2 from './components/Counter2.js';
 
 // redux
 import { Provider } from 'react-redux';
@@ -12,7 +12,7 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <Counter />
+        <Counter2 />
       </div>
     </Provider>
   );
