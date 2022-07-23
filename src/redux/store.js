@@ -8,6 +8,9 @@ import logger from "redux-logger";
 // Redux DevTools
 import { composeWithDevTools } from "redux-devtools-extension";
 
-const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(logger)))
+// Redux-Thunk
+import thunk from "redux-thunk";
+
+const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(logger, thunk)))
 
 export default store
