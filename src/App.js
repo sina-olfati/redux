@@ -15,6 +15,8 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
+        <Counter2 />
+        <Number2 />
         <Users />
       </div>
     </Provider>

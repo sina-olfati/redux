@@ -22,15 +22,17 @@ const fetchUsersFailure = error => {
 
 const fetchUsers = () => {
     return (dispatch) => {
-        dispatch(fetchUsersRequest)
+        dispatch(fetchUsersRequest())
         axios.get("https://jsonplaceholder.typicode.com/users")
-        .then(response => {
-            const users = response.data
-            dispatch(fetchUsersSuccess(users))
-        })
-        .catch(error => {
-            const errorMsg = error.message
-            dispatch(fetchUsersFailure(errorMsg))
-        })
+            .then(response => {
+                const users = response.data
+                dispatch(fetchUsersSuccess(users))
+            })
+            .catch(error => {
+                const errorMsg = error.message
+                dispatch(fetchUsersFailure(errorMsg))
+            })
     }
 }
+
+export { fetchUsers }
